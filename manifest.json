@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Post Tax",
+    "version": "1.0",
+    "description": "This extension allows you to see the amount you owe after taxes.",
+    "icons": {
+        "128": "images/at-icon-128.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://www.amazon.ca/*"
+          ]
+        }
+    ]
+  }
